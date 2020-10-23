@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p ./appdata/server1 ./appdata/shared
+chmod 777 ./appdata/*
+
+
+

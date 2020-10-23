@@ -1,0 +1,30 @@
+version: "2.4"
+services:
+    ark1:
+        container_name: ark1
+        image: arkserver
+        network_mode: host
+        ulimits:
+            nproc: 65535
+            nofile:
+                soft: 200000
+                hard: 200000
+        #restart: unless-stopped
+        #deploy:
+        #    restart_policy:
+        #        window: 180s
+
+        volumes:
+            - "./appdata/shared:/data/"
+            - "./appdata/server1/saved:/data/server-files/ShooterGame/Saved"
+            - "./appdata/server1/logs:/data/server-files/ShooterGame/Logs"
+            - "./appdata/server1/backup:/backup"
+
+        #ports: 
+        #    - "27210:32330"
+        #    - "27110:27110"
+        #    - "27010:27010"   
+      
+        command: "/init"
+
+

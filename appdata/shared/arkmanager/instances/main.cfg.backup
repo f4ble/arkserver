@@ -1,0 +1,36 @@
+# config environment
+arkserverroot="/data/server-files"                                     # path of your ARK server files (default ~/ARK)
+
+# ARK server options - use ark_<optionname>=<value>
+# comment out these values if you want to define them
+# inside your GameUserSettings.ini file
+serverMap="CrystalIsles"                                               # server map (default TheIsland)
+#serverMapModId="469987622"                                         # Uncomment this to specify the Map Mod Id (<fileid> in http://steamcommunity.com/sharedfiles/filedetails/?id=<fileid>)
+#ark_TotalConversionMod="496735411"                                 # Uncomment this to specify a total-conversion mod
+#ark_RCONEnabled="True"                                              # Enable RCON Protocol
+#ark_RCONPort="32330"                                                # RCON Port
+#ark_SessionName="ARK Server Tools"                                  # if your session name needs special characters please use the .ini instead
+ark_Port="27110"                                                     # ARK server port (default 7778)
+ark_QueryPort="27010"                                               # ARK query port (default 27015)
+#ark_ServerPassword=""                                               # ARK server password, empty: no password required to login
+#ark_ServerAdminPassword="keyboardcat"                               # ARK server admin password, KEEP IT SAFE!
+#ark_MaxPlayers="20"
+ark_GameModIds="731604991,793605978,566887000,758620733,719928795,760865850,793605978,722649005,725398419,819435265,1875540869"                     # Uncomment to specify additional mods by Mod Id separated by commas
+#ark_AltSaveDirectoryName="SotF"                                    # Uncomment to specify a different save directory name
+
+arkflag_crossplay=true
+arkflag_UseBattlEye=true
+
+arkopt_PublicIPForEpic="51.175.112.165"
+arkopt_ClusterDirOverride="/data/cluster"
+arkopt_clusterid="gg1337"
+
+# ARK server flags - use arkflag_<optionname>=true
+#arkflag_OnlyAdminRejoinAsSpectator=true                            # Uncomment to only allow admins to rejoin as spectator
+#arkflag_DisableDeathSpectator=true                                 # Uncomment to disable players from becoming spectators when they die
+
+# ARK server options - i.e. for -optname=val, use arkopt_optname=val
+#arkopt_StructureDestructionTag=DestroySwampSnowStructures
+
+#arkCustomDynamicConfigURL="http://arkdedicated.com/dynamicconfig.ini"  # Set this to use a custom dynamic config from the given server address
+#arkPreStart="/etc/arkmanager/instances/instance.start"              # Set this to override the start script; defaults to config file name with .cfg replaced by .start

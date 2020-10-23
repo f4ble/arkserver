@@ -1,0 +1,8 @@
+#!/bin/bash
+
+php merge_ini.php -b /root/docker/ark-serverman/appdata/server1/saved/Config/LinuxServer/Game.ini \
+    -n /home/fable/ark-server-config/server1/ShooterGame/Saved/Config/WindowsServer/Game.ini
+
+php merge_ini.php -b /root/docker/ark-serverman/appdata/server1/saved/Config/LinuxServer/GameUserSettings.ini \
+    -n /home/fable/ark-server-config/server1/ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini 
+

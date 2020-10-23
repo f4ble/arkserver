@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec ark1 arkmanager saveworld
